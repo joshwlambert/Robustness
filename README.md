@@ -4,5 +4,5 @@
 [![Biorxiv link](https://img.shields.io/badge/bioRxiv-10.1101%2F2021.07.26.453064-blue)](https://www.biorxiv.org/content/10.1101/2021.07.26.453064v1)
 
 
-Biorxiv: https://www.biorxiv.org/content/10.1101/2021.07.26.453064v1
+Biorxiv: https://www.biorxiv.org/content/10.1101/2021.07.26.453064v2
 
