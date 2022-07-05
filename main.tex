@@ -130,7 +130,7 @@ We quantified the error using the $\Delta$nLTT statistic \citep{janzen_approxima
 
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{area.png}
+    \includegraphics{JBI-21-0508_Fig1.png}
     \caption{Variation in island area through time simulated in oceanic ontogeny and oceanic ontogeny + sea-level scenarios. The black lines correspond to area variation through time from oceanic ontogeny simulations, calibrated to the island age, maximum age and time of peak area for Maui Nui and Kaua'i. The blue lines correspond to area variation through time from a combination of oceanic ontogeny and sea-level simulations for Maui Nui and Kaua'i islands. In (a), the variation in island area in the oceanic ontogeny + sea-level scenario is shown for a steep (85\degree) island and following the same geological calibration as above. Because the modelled islands are steep, sea-level fluctuations have a lower impact on island area. In (b), the same scenarios are presented, but here shallow islands (80\degree) are modelled, resulting in a greater influence of sea level on island area. mya – million years ago.}
     \label{fig:area}
 \end{figure}
@@ -138,7 +138,6 @@ We quantified the error using the $\Delta$nLTT statistic \citep{janzen_approxima
 \clearpage
 
 \begin{figure}
-    \centering
     \includegraphics[height=12cm]{pipeline.png}
     \caption{Schematic representation of the robustness pipeline. (1) Island phylogenetic data is produced by a geodynamic simulation. (2) Reconstructed phylogenetic data is produced by pruning (removing) all extinct lineages. (3) DAISIE maximum likelihood estimation (MLE) of parameters, which assumes no geodynamics, is applied to data from step 2. (4) A constant-area oceanic simulation (i.e. the original DAISIE method) is run with the parameters estimates from step 3 as generating parameters. (5) Phylogenies are pruned to reconstructed trees. (6) The DAISIE MLE is applied to data from step 5. (7) A constant-area oceanic simulation is run with parameter estimates from step 6 as generating parameters. The inference error made on data from a geodynamic simulation ($E$, step 3) is compared with the baseline error ($E_0$, step 6). The error $E$ is calculated by comparing the geodynamic simulations with the first set of constant-area oceanic simulations for five metrics (dashed line). The baseline error $E_0$ is obtained by comparing two oceanic simulations using the same five metrics (dashed line). The error made when inferring from geodynamic data but assuming the constant-area oceanic model in inference is the proportion of errors ($E$) that exceed the 95\textsuperscript{th} percentile of the baseline errors ($E_0$).}
     \label{fig:pipeline}
