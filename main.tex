@@ -18,7 +18,7 @@
 \linespread{2}
 
 \title{The robustness of a simple dynamic model of island biodiversity to geological and sea-level change}
-\author{Pedro Santos Neves*\textsuperscript{1}, Joshua W. Lambert*\textsuperscript{1}, Luis Valente\textsuperscript{1,2} and Rampal S. Etienne\textsuperscript{1}}
+\author{Pedro Santos Neves*\textsuperscript{1}, Joshua W. Lambert*\textsuperscript{1}, Luis Valente\textsuperscript{+1,2} and Rampal S. Etienne\textsuperscript{+1}}
 \date{}
 
 \linenumbers
@@ -34,11 +34,13 @@ Groningen, Box 11103, 9700 CC Groningen, The Netherlands
 
 \noindent * These authors contributed equally to this work.
 
+\noindent \textsuperscript{+} These authors jointly contribute to senior authorship.
+
 \noindent Corresponding Author: Pedro Santos Neves, Groningen Institute for Evolutionary Life Sciences, Box 11103, 9700 CC Groningen, The Netherlands. Email: p.m.santos.neves@rug.nl.
 
 \section*{Abstract}
 
-Aim: Biodiversity on islands is influenced by geophysical processes and sea-level fluctuations. Oceanic islands (never connected to a landmass) are initially vacant with diversity accumulating via colonisation and speciation, and then decline as islands shrink. Continental islands have species upon disconnection from the mainland and may have transient land-bridge connections. Theoretical predictions for the effects of these geophysical processes on rates of colonisation, speciation, and extinction have been proposed. However, paleogeographic reconstructions are currently unavailable for most islands, and phylogenetic models overlook island ontogeny, sea-level changes, or past landmass connections. We analyse to what extent ignoring geodynamics in the inference model affects model predictions when confronted with data simulated with geodynamics. \\
+Aim: Biodiversity on islands is influenced by geophysical processes and sea-level fluctuations. Oceanic islands (never connected to a landmass) are initially vacant with diversity accumulating via colonisation and speciation, and then declining as islands shrink. Continental islands have species upon disconnection from the mainland and may have transient land-bridge connections. Theoretical predictions for the effects of these geophysical processes on rates of colonisation, speciation, and extinction have been proposed. However, paleogeographic reconstructions are currently unavailable for most islands, and phylogenetic models overlook island ontogeny, sea-level changes, or past landmass connections. We analyse to what extent ignoring geodynamics in the inference model affects model predictions when confronted with data simulated with geodynamics. \\
 
 \noindent Location: Simulations of oceanic and continental islands. \\
 
@@ -56,9 +58,9 @@ Aim: Biodiversity on islands is influenced by geophysical processes and sea-leve
 
 \noindent \textbf{Significance Statement}: Island biogeographic studies seek to understand how island communities assemble and diversify. While islands undergo geological and sea-level changes that affect biodiversity, data on geodynamic processes on islands is often lacking, and current phylogenetic models in island biogeography do not incorporate geological evolution. This study shows that despite not including geodynamics, a simple phylogenetic model (DAISIE) often accurately infers the history of biodiversity on islands subject to island ontogeny, sea-level changes and continental islands that have been isolated for a long period. However, the model is not robust to recently formed continental and land-bridge islands, elucidating the need for new phylogenetic methods for these island types. \\
 
-\noindent \textbf{Author contributions}: P.N., J.W.L., L.V., and R.S.E. conceived the ideas and methodology and wrote the code, P.N. and J.W.L. analysed the data and led the writing. L.V. and R.S.E. commented on the analysis and the manuscript.\\
+\noindent \textbf{Author contributions}: P.S.N., J.W.L., L.V., and R.S.E. conceived the ideas and methodology and wrote the code, P.S.N. and J.W.L. analysed the data and led the writing. L.V. and R.S.E. commented on the analysis and the manuscript.\\
 
-Strapline: Model robustness to island dynamics
+\noindent \textbf{Strapline}: Model robustness to island dynamics
 
 \clearpage
 
@@ -240,7 +242,7 @@ The theory of species dispersal controlled by geological evolution, and specific
 
 \subsection*{Robustness studies in phylogenetics}
 
-Testing the performance of a model of species diversification using reconstructed phylogenies, either by testing model adequacy or the type I error rate and power, has previously been explored \citep{davis_exploring_2013, pennell_model_2015, rabosky_model_2015, etienne_how_2016}. However, these studies assume the inference model is the same as the generating model used to simulate the data. Investigating the behaviour of an inference model when the generating model is different has not been frequently used in models fitted to phylogenetic data (but see \cite{simonet_robustness_2018}). At the same time, the robustness of models of phylogenetic inference has been tested and is well established \citep{huelsenbeck_performance_1995, bilderbeek_quantifying_2021}. Interestingly, these studies have shown that under certain conditions a bias favours simple models over more complex alternatives \citep{yang_how_1997, bruno_topological_1999}. The robustness of the DAISIE inference model to violations in its assumptions highlights the justification for general approximations to describe complex phenomena with a high number of degrees of freedom. Biological systems of interest are highly complex, with heterogeneity between individuals scaling up to macroevolutionary dynamics. Therefore, as in other fields of science, approximations are warranted for a generalised understanding of a system, but should be justified through analysis of a model’s robustness to violations. The generality of the robustness pipeline developed here allows for other studies on the robustness of other models under complex generating processes. Alternative hypotheses for island changes are changing isolation, topographical complexity, or evolution of environmental heterogeneity as new islands undergo succession \citep{massol_island_2017, barajasbarbosa_environmental_2020}.
+Testing the performance of a model of species diversification using reconstructed phylogenies, either by testing model adequacy or the type I error rate and power, has previously been performed \citep{davis_exploring_2013, pennell_model_2015, rabosky_model_2015, etienne_how_2016}. However, these studies assume the inference model is the same as the generating model used to simulate the data. Investigating the behaviour of an inference model when the generating model is different has not been frequently used in models fitted to phylogenetic data (but see \cite{simonet_robustness_2018}). At the same time, the robustness of models of phylogenetic inference has been tested and is well established \citep{huelsenbeck_performance_1995, bilderbeek_quantifying_2021}. Interestingly, these studies have shown that under certain conditions a bias favours simple models over more complex alternatives \citep{yang_how_1997, bruno_topological_1999}. The robustness of the DAISIE inference model to violations in its assumptions highlights the justification for general approximations to describe complex phenomena with a high number of degrees of freedom. Biological systems of interest are highly complex, with heterogeneity between individuals scaling up to macroevolutionary dynamics. Therefore, as in other fields of science, approximations are warranted for a generalised understanding of a system, but should be justified through analysis of a model’s robustness to violations. The generality of the robustness pipeline developed here allows for other studies on the robustness of other models under complex generating processes. Alternative hypotheses for island changes are changing isolation, topographical complexity, or evolution of environmental heterogeneity as new islands undergo succession \citep{massol_island_2017, barajasbarbosa_environmental_2020}.
 
 \section*{Acknowledgments}
 
@@ -248,19 +250,19 @@ We would like to thank Shu Xie, Giovanni Laudanno, Richèl J.C. Bilderbeek, and 
 
 \section*{Data availability}
 
-Data generated and results obtained in this study is archived on an open data repository hosted by Zenodo at \url{https://doi.org/10.5281/zenodo.6554830}. The code implementing the pipeline used on this study can be found on the R package `DAISIErobustness' version 2.3.0 which is archived on Zenodo at \url{https://doi.org/10.5281/zenodo.6488378}. The updated R code used for data and results visualisation present on this manuscript is released under version 2.4.0 of the `DAISIErobustness' package, archived on Zenodo at \url{https://doi.org/10.5281/zenodo.6811591}. Active development of the package takes place on a GitHub repository with URL \url{https://github.com/Neves-P/DAISIErobustness}.
+Data generated and results obtained in this study is archived on an open data repository hosted by Zenodo at \url{https://doi.org/10.5281/zenodo.6554830}. The code implementing the pipeline used on this study can be found on the R package `DAISIErobustness' version 2.3.0 which is archived on Zenodo at \url{https://doi.org/10.5281/zenodo.6488378}. The updated R code used for data and results visualisation present on this manuscript is released under version 2.4.0 of the `DAISIErobustness' package, archived on Zenodo at \url{https://doi.org/10.5281/zenodo.6811591}. The package is also available as a GitHub repository with URL \url{https://github.com/Neves-P/DAISIErobustness}.
 
 \section*{Conflict of interest}
 
-No conflict of interest is declared.
+No conflict of interest to be declared.
 
 
 \bibliographystyle{apalike}
 \bibliography{references}
 
-\noindent \textbf{Biosketch}: The authors, based at the University of Groningen and Naturalis Biodiversity Center, develop and apply novel computational methods in island biogeography. They utilise community phylogenetic data to understand processes and patterns on islands over macroevolutionary timescales.
+\noindent \textbf{Biosketch}: The authors, based at the University of Groningen and Naturalis Biodiversity Center, develop and apply novel computational methods in island biogeography. They use community phylogenetic data to understand processes and patterns on islands over macroevolutionary timescales.
 
-\noindent \textbf{Editor}: Sandra Nogue
+\noindent \textbf{Handling Editor}: Sandra Nogué
 
 \clearpage
 
