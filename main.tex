@@ -34,7 +34,7 @@ Groningen, Box 11103, 9700 CC Groningen, The Netherlands
 
 \noindent * These authors contributed equally to this work.
 
-\noindent \textsuperscript{+} These authors jointly contribute to senior authorship.
+\noindent \textsuperscript{+} These authors jointly contributed to senior authorship.
 
 \noindent Corresponding Author: Pedro Santos Neves, Groningen Institute for Evolutionary Life Sciences, Box 11103, 9700 CC Groningen, The Netherlands. Email: p.m.santos.neves@rug.nl.
 
@@ -140,6 +140,7 @@ We quantified the error using the $\Delta$nLTT statistic \citep{janzen_approxima
 \clearpage
 
 \begin{figure}
+    \centering
     \includegraphics{JBI-21-0508_Fig2.png}
     \caption{Schematic representation of the robustness pipeline. (1) Island phylogenetic data is produced by a geodynamic simulation. (2) Reconstructed phylogenetic data is produced by pruning (removing) all extinct lineages. (3) DAISIE maximum likelihood estimation (MLE) of parameters, which assumes no geodynamics, is applied to data from step 2. (4) A constant-area oceanic simulation (i.e. the original DAISIE method) is run with the parameters estimates from step 3 as generating parameters. (5) Phylogenies are pruned to reconstructed trees. (6) The DAISIE MLE is applied to data from step 5. (7) A constant-area oceanic simulation is run with parameter estimates from step 6 as generating parameters. The inference error made on data from a geodynamic simulation ($E$, step 3) is compared with the baseline error ($E_0$, step 6). The error $E$ is calculated by comparing the geodynamic simulations with the first set of constant-area oceanic simulations for five metrics (dashed line). The baseline error $E_0$ is obtained by comparing two oceanic simulations using the same five metrics (dashed line). The error made when inferring from geodynamic data but assuming the constant-area oceanic model in inference is the proportion of errors ($E$) that exceed the 95\textsuperscript{th} percentile of the baseline errors ($E_0$).}
     \label{fig:pipeline}
@@ -154,6 +155,7 @@ The robustness pipeline (Fig. \ref{fig:pipeline}) was run until 500 replicates w
 \clearpage
 
 \begin{figure}
+    \centering
     \includegraphics{JBI-21-0508_Fig3.png}
     \caption{Hypothetical examples of histograms of error ($E$) and baseline error ($E_0$) distributions for two parameter sets. The error is the bias made by the inference model from fitting geodynamic data, while the baseline error is the bias inherent to the model when the inference model matches the generating process. The dashed pink line corresponds to the 95\textsuperscript{th} percentile of the $E_0$ distribution. In (a) the $E$ and $E_0$ distributions are largely overlapping and a large proportion of the $E_0$ distribution falls to the left of the dashed pink line (low $ED_{95}$ value). By contrast, in (b), the majority of the error distribution falls to the right of the dashed pink line (high $ED_{95}$ value).}
     \label{fig:hist_spec_nltt}
